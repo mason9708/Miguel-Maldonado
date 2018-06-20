@@ -40,6 +40,7 @@
         platform.create(600, 400);
         platform.create(200, 600);
         platform.create(600, 300);
+        platform.create(600, 300);
         
         
         
