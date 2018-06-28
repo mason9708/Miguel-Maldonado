@@ -30,15 +30,15 @@ var level01 = function (window) {
     function createEnemy(x,y) {
     // all code from TODO 12
     var enemy =  game.createGameItem('enemy',25);
-var redCircle = draw.rect(50,50,'orange', 'purple',10);
-redCircle.x = -25;
-redCircle.y = -25;
-enemy.addChild(redCircle);
+var redSquare = draw.rect(50,50,'orange', 'purple',10);
+redSquare.x = -25;
+redSquare.y = -25;
+enemy.addChild(redSquare);
 enemy.x = x;
 enemy.y = y;
 game.addGameItem(enemy);
 enemy.velocityX = -6;
-enemy.rotationVelocity = -10;
+enemy.rotationVelocity = 10;
 enemy.onPlayerCollision = function() {
     game.changeIntegrity(-15);
 enemy.fadeOut();
