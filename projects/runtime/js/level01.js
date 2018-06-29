@@ -87,7 +87,8 @@ obstacleImage.y = -y;
      }
     }
    
-
+  var enemy =  game.createGameItem('enemy',25);
+var redSquare = draw.rect(50,50,'orange', 'purple',10);
 
 };
 
